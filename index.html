@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aumentadas · Becas 2027</title>
-<meta name="description" content="Laboratorio presencial en Valencia para profesionales latinoamericanas en España que convierten su experiencia en un proyecto propio con inteligencia artificial. Becas parciales y completas.">
+<meta name="description" content="Laboratorio presencial para profesionales latinoamericanas en España que convierten su experiencia en un proyecto propio con inteligencia artificial. Becas parciales y completas.">
 <meta property="og:title" content="Aumentadas · Becas 2027">
 <meta property="og:description" content="No empieces de cero. Crea desde lo que ya sabes. Postula a tu beca.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%231f8f84'/%3E%3C/svg%3E">
@@ -33,12 +33,15 @@ h2{margin:0;font-family:'Bricolage Grotesque','Public Sans',sans-serif;font-weig
 .card.cream{background:#f8f5ef}
 .card h3{margin:0;font-size:22px;line-height:1.25}
 .card p{margin:0;color:#4f5d6a}
+.card p.price,.card p.num{color:inherit}
 .num{margin:0;font-family:'Bricolage Grotesque','Public Sans',sans-serif;font-weight:800;font-size:44px;line-height:1}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 30px;border-radius:999px;font-weight:700;font-size:18px;text-decoration:none;text-align:center}
 .btn-primary{background:#e2b052;color:#1d2b3a}
 .btn-primary:hover{background:#ecc06a;color:#1d2b3a}
 .btn-ghost{border:2px solid #f8f5ef;color:#f8f5ef}
 .btn-ghost:hover{background:rgba(248,245,239,0.1);color:#f8f5ef}
+.btn-mint{background:#7fd0c6;color:#1d2b3a}
+.btn-mint:hover{background:#9adbd3;color:#1d2b3a}
 .btn-teal{background:#17766d;color:#ffffff}
 .btn-teal:hover{background:#0f5a53;color:#ffffff}
 .hero{background:#1d2b3a;color:#f8f5ef;padding:0 0 120px;overflow:hidden}
@@ -46,7 +49,8 @@ h2{margin:0;font-family:'Bricolage Grotesque','Public Sans',sans-serif;font-weig
 .logo{font-family:'Bricolage Grotesque','Public Sans',sans-serif;font-weight:800;font-size:28px;color:#f8f5ef;text-decoration:none;letter-spacing:-0.5px}
 .nav{display:flex;align-items:center;gap:24px}
 .nav a.link{color:#f8f5ef;text-decoration:none;font-weight:500}
-.nav .btn{min-height:48px;padding:0 22px;font-size:16px}
+.nav .btn{min-height:48px;padding:0 22px;font-size:16px;white-space:nowrap}
+.nav .short{display:none}
 .hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:center;padding-top:72px}
 .hero-copy{display:flex;flex-direction:column;gap:28px}
 .hero .eyebrow{color:#7fd0c6}
@@ -98,10 +102,15 @@ footer a{color:#f8f5ef}
 .g2,.g3{grid-template-columns:1fr}
 }
 @media (max-width:700px){
+.nav{gap:8px}
+.nav .btn{min-height:44px;padding:0 16px;font-size:15px}
+.nav .full{display:none}
+.nav .short{display:inline}
+.topbar{gap:10px}
 body{font-size:19px}
 section{padding:72px 0}
 .nav a.link{display:none}
-.logo{font-size:24px}
+.logo{font-size:20px}
 .hero{padding-bottom:88px}
 .hero-sub{font-size:21px}
 .ctas .btn{width:100%}
@@ -123,7 +132,8 @@ section{padding:72px 0}
 <a class="link" href="#camino">Cómo funciona</a>
 <a class="link" href="#becas">Becas</a>
 <a class="link" href="#fundadora">Sobre mí</a>
-<a class="btn btn-primary" href="https://docs.google.com/forms/d/1gylqDV1QrIksuEPeacNqh10lhUTttoYInnpJ0mE20uY/viewform" target="_blank" rel="noopener">Postula a tu beca</a>
+<a class="btn btn-ghost" href="patrocinadores.html"><span class="full">Quiero patrocinar</span><span class="short">Patrocinar</span></a>
+<a class="btn btn-primary" href="https://docs.google.com/forms/d/1gylqDV1QrIksuEPeacNqh10lhUTttoYInnpJ0mE20uY/viewform" target="_blank" rel="noopener"><span class="full">Postula a tu beca</span><span class="short">Postula</span></a>
 </nav>
 </div>
 <div class="hero-grid">
@@ -133,7 +143,6 @@ section{padding:72px 0}
 <p class="hero-sub">Convierte tu experiencia profesional en una solución propia, con la inteligencia artificial como compañera de creación.</p>
 <div class="ctas">
 <a class="btn btn-primary" href="https://docs.google.com/forms/d/1gylqDV1QrIksuEPeacNqh10lhUTttoYInnpJ0mE20uY/viewform" target="_blank" rel="noopener">Postula a tu beca</a>
-<a class="btn btn-ghost" href="#camino">Ver cómo funciona</a>
 </div>
 <p class="hero-note">Para profesionales latinoamericanas en España · Becas parciales y completas</p>
 </div>
@@ -293,6 +302,10 @@ section{padding:72px 0}
 <a class="btn btn-teal" href="https://docs.google.com/forms/d/1gylqDV1QrIksuEPeacNqh10lhUTttoYInnpJ0mE20uY/viewform" target="_blank" rel="noopener">Postula a tu beca</a>
 <p>Postular es gratis y te toma 12 minutos. Te escribiremos cuando haya una plaza para ti.</p>
 </div>
+<div class="card" style="max-width:900px;margin:48px auto 0;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;background:#1d2b3a;border-color:#1d2b3a">
+<div style="display:flex;flex-direction:column;gap:6px"><p class="eyebrow" style="color:#7fd0c6">¿Representas a una empresa o entidad?</p><p style="color:#f8f5ef;font-size:21px;font-weight:700">Patrocina una plaza y abre la puerta a una profesional.</p></div>
+<a class="btn btn-primary" href="patrocinadores.html">Quiero patrocinar</a>
+</div>
 </div>
 </section>
 
@@ -302,7 +315,7 @@ section{padding:72px 0}
 <div class="founder-copy">
 <p class="eyebrow">Quién está detrás</p>
 <h2>Soy Sandra Alfaro Vargas. Yo también empecé de nuevo.</h2>
-<p class="lead">Peruana, vivo en Valencia. Llevo más de 10 años diseñando cursos corporativos en soft skills y formando en comunicación, liderazgo e inteligencia emocional. Tengo un máster en IA aplicada a la educación, vengo trabajando con IA y los cambios que está provocando en los negocios son brutales.</p>
+<p class="lead">Peruana, vivo en España. Llevo más de 10 años diseñando cursos corporativos en soft skills y formando en comunicación, liderazgo e inteligencia emocional. Tengo un máster en IA aplicada a la educación, vengo trabajando con IA y los cambios que está provocando en los negocios son brutales.</p>
 <p class="lead">Creé Aumentadas para que ninguna mujer sienta que su experiencia pierde valor por cruzar una frontera, y para que cada una eleve sus competencias profesionales con la IA y descubra todo lo que puede ofrecer en el mercado.</p>
 </div>
 </div>
@@ -321,7 +334,7 @@ section{padding:72px 0}
 <details><summary>¿Cómo funcionan las becas?</summary><p>Las postulaciones se revisan mediante el formulario y, cuando corresponda, una conversación con Sandra o una participación en el Lab. La concesión de becas depende de los criterios del proceso y de la disponibilidad de patrocinio.</p></details>
 <details><summary>¿Postularme significa que ya tengo una plaza?</summary><p>No. Enviar el formulario expresa tu interés y permite evaluar tu postulación. La selección, la plaza y las condiciones económicas se confirmarán después.</p></details>
 <details><summary>¿Cuándo me avisan si soy o no beneficiaria del programa?</summary><p>Revisamos tu postulación y te escribimos por email o WhatsApp aproximadamente una o dos semanas después de que postules.</p></details>
-<details><summary>¿Cuándo y dónde se realizarán los programas?</summary><p>Presencial, en Valencia. Aumentadas Lab: sábado 14 de noviembre o sábado 5 de diciembre de 2026. Aumentadas Core: de enero a marzo de 2027. Después llegaremos a Barcelona y Madrid.</p></details>
+<details><summary>¿Cuándo y dónde se realizarán los programas?</summary><p>Presencial en Barcelona. Aumentadas Lab: sábado 14 de noviembre o sábado 5 de diciembre de 2026. Aumentadas Core: de enero a marzo de 2027.</p></details>
 </div>
 </div>
 </section>
@@ -336,7 +349,7 @@ section{padding:72px 0}
 <footer>
 <div class="wrap">
 <p style="margin:0"><strong class="display" style="color:#f8f5ef;font-size:20px">Aumentadas</strong> · Mujeres emprendedoras aumentadas con IA</p>
-<a href="https://www.sanalfaro.com" target="_blank" rel="noopener">sanalfaro.com</a>
+<span style="display:flex;gap:20px;flex-wrap:wrap"><a href="patrocinadores.html">Patrocinadores</a><a href="https://www.sanalfaro.com" target="_blank" rel="noopener">sanalfaro.com</a></span>
 </div>
 </footer>
 
