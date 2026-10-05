@@ -131,6 +131,15 @@ section{padding:72px 0}
 .nav .short{display:none}
 @media (max-width:1024px){.g4{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:700px){.nav .full{display:none}.nav .short{display:inline}}
+.faq details p+p{margin-top:10px}
+.next-step{max-width:960px;margin:72px auto 0;background:#1d2b3a;border-radius:32px;padding:56px 40px}
+@media (max-width:700px){.next-step{padding:40px 20px;margin-top:56px}}
+.btn-mint{background:#7fd0c6;color:#1d2b3a}
+.btn-mint:hover{background:#9adbd3;color:#1d2b3a}
+@media (max-width:700px){.nav{gap:8px}.nav .btn{min-height:44px;padding:0 14px;font-size:15px}.logo{font-size:20px}}
+@media (max-width:400px){.wrap{padding:0 16px}.nav{gap:6px}.nav .btn{padding:0 12px;font-size:14px}.logo{font-size:18px}}
+@media (max-width:1024px){.g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.chip{padding:12px 10px;font-size:15px}}
 </style>
 </head>
 <body>
@@ -145,6 +154,7 @@ section{padding:72px 0}
 <a class="link" href="#fundadora">Sobre mí</a>
 <!-- PENDIENTE: sustituir TU_EMAIL por el email real -->
 <a class="btn btn-primary" href="mailto:TU_EMAIL?subject=Alianza%20Aumentadas"><span class="full">Explorar una alianza</span><span class="short">Alianza</span></a>
+<a class="btn btn-mint" href="https://docs.google.com/forms/d/1gylqDV1QrIksuEPeacNqh10lhUTttoYInnpJ0mE20uY/viewform" target="_blank" rel="noopener"><span class="full">Postulación</span><span class="short">Postula</span></a>
 </nav>
 </div>
 <div class="hero-grid">
@@ -354,10 +364,34 @@ section{padding:72px 0}
 <div class="wrap">
 <div class="head center"><h2>Preguntas frecuentes</h2></div>
 <div class="faq">
-<details><summary>¿Cómo se selecciona a las participantes patrocinadas?</summary><p>Mediante un formulario de postulación, una conversación con Sandra y, cuando corresponde, su participación en un Aumentadas Lab. Se valora la trayectoria, la motivación y la necesidad de apoyo económico.</p></details>
-<details><summary>¿Puedo patrocinar a un perfil concreto?</summary><p>Sí. Podemos acordar un enfoque, por ejemplo por sector profesional o colectivo, siempre que encaje con los criterios del programa.</p></details>
-<details><summary>¿Qué pasa si no se completa la cohorte?</summary><p>Si el programa no arranca, te devolvemos la aportación o la aplicamos a la siguiente cohorte, según prefieras.</p></details>
-<details><summary>¿Recibo factura?</summary><p>Sí. Cada aportación se factura con IVA incluido.</p></details>
+<details><summary>¿Qué es Aumentadas?</summary><p>Aumentadas es un laboratorio de creación que ayuda a profesionales a convertir su experiencia y conocimiento en soluciones que otras personas puedan utilizar, probar y valorar.</p><p>La inteligencia artificial forma parte del proceso como herramienta de creación y amplificación, pero el punto de partida es todo lo que la participante ya sabe hacer.</p></details>
+<details><summary>¿Qué estoy financiando realmente cuando patrocino una plaza?</summary><p>No estás financiando únicamente formación. Estás haciendo posible un proceso de transformación.</p><p>Tu aportación permite que una profesional tenga acceso a acompañamiento, experimentación, herramientas y un entorno de creación para pasar de su experiencia profesional a una primera solución, prototipo y proceso de validación con personas reales.</p></details>
+<details><summary>¿Aumentadas es un curso de inteligencia artificial?</summary><p>No. La IA es una herramienta dentro del proceso, no el producto principal de Aumentadas.</p><p>La propuesta es utilizar las nuevas capacidades de la IA para explorar problemas, diseñar soluciones, crear prototipos, experimentar y validar ideas partiendo de la experiencia profesional de cada participante.</p></details>
+<details><summary>¿Qué puede crear una participante?</summary><p>Dependerá de su experiencia, del problema que identifique y de la oportunidad que encuentre.</p><p>Puede desarrollar, por ejemplo, una herramienta digital, un servicio, un método, una experiencia, un recurso profesional o un prototipo apoyado por IA.</p><p>No buscamos que todas creen lo mismo. Buscamos que cada una encuentre una forma concreta de convertir lo que sabe en algo que pueda ser utilizado.</p></details>
+<details><summary>¿Quiénes participan en Aumentadas?</summary><p>La primera cohorte está dirigida a profesionales latinoamericanas residentes en España, con experiencia profesional y conocimientos que puedan convertirse en nuevas soluciones.</p><p>El proceso de selección busca conocer su experiencia, situación profesional, intereses, motivación y capacidad para comprometerse con el proceso.</p><p>No es necesario partir de una idea de negocio completamente definida.</p></details>
+<details><summary>¿Cómo se medirá el impacto?</summary><p>La primera cohorte servirá también para validar la metodología. Entre los indicadores que queremos observar están:</p><ul style="margin:12px 0 0;padding-left:22px;color:#4f5d6a"><li>porcentaje de participantes que terminan con una solución funcional;</li><li>número de personas que utilizan o prueban cada solución;</li><li>utilidad percibida;</li><li>señales de validación recibidas;</li><li>continuidad de los proyectos después del programa.</li></ul><p>Los objetivos de la primera cohorte son hipótesis a demostrar, no resultados ya obtenidos.</p></details>
+<details><summary>¿Qué recibe nuestra entidad si patrocina?</summary><p>Dependiendo de la modalidad, la colaboración puede incluir:</p><ul style="margin:12px 0 0;padding-left:22px;color:#4f5d6a"><li>información sobre el desarrollo de la cohorte;</li><li>informe de resultados;</li><li>presentación final;</li><li>visibilidad como entidad colaboradora;</li><li>posibilidad de participación del equipo en determinadas actividades.</li></ul><p>Pero el principal retorno es contribuir a demostrar que el talento profesional infrautilizado puede convertirse en nuevas soluciones y oportunidades.</p></details>
+<details><summary>¿Podemos participar activamente en el proyecto?</summary><p>Sí. Además del patrocinio económico, Aumentadas contempla colaboraciones que pueden aportar conocimiento, espacios, mentoría, herramientas, contactos u otros recursos.</p><p>No todas las alianzas tienen que ser económicas.</p></details>
+<details><summary>¿Qué ocurre si una participante no consigue crear una solución?</summary><p>Aumentadas no garantiza un producto comercial, clientes, ingresos ni empleo. El objetivo de la primera cohorte es precisamente experimentar y medir qué funciona.</p><p>Una participante puede terminar con un prototipo, una solución validada, una nueva propuesta profesional o aprendizajes que indiquen que una determinada idea no tiene suficiente valor.</p><p>La validación también consiste en descubrir qué no funciona antes de invertir más recursos.</p></details>
+<details><summary>¿Cuánto cuesta patrocinar una plaza?</summary><p>La aportación prevista para la primera cohorte es de <strong>450 €</strong> por el patrocinio completo de una plaza.</p><p>También existe el <strong>patrocinio parcial de 225 €</strong>, complementado con la aportación de la participante.</p><p>Para colaboraciones diferentes (espacios, herramientas, mentoría u otros recursos) podemos estudiar fórmulas específicas.</p></details>
+<details><summary>¿Por qué apoyar Aumentadas ahora y no esperar a que esté más consolidado?</summary><p>Porque la primera cohorte es precisamente el momento en el que se construye y valida el modelo.</p><p>Las primeras entidades colaboradoras no solo financian participantes: ayudan a hacer posible el experimento inicial, aportan legitimidad y pueden contribuir a definir cómo crecerá Aumentadas.</p><p>Es una oportunidad para formar parte del origen del proyecto.</p></details>
+<details><summary>¿En qué fase está actualmente Aumentadas?</summary><p>Aumentadas está en una fase inicial de construcción y validación.</p><p>La primera cohorte será una oportunidad para probar la metodología, medir resultados, aprender de las participantes y mejorar el modelo.</p><p>No presentamos todavía resultados históricos que no existen.</p></details>
+</div>
+<div class="next-step">
+<div class="head center" style="margin-bottom:32px">
+<p class="eyebrow" style="color:#7fd0c6">Siguiente paso</p>
+<h2 style="color:#f8f5ef;font-size:clamp(30px,4vw,44px)">¿Y si queremos ir un paso más allá?</h2>
+</div>
+<div class="faq">
+<details><summary>¿Podemos hablar antes de decidir?</summary><p>Sí. Si tu entidad está explorando una posible colaboración, podemos conversar sobre sus objetivos y estudiar qué modalidad tiene más sentido.</p></details>
+<details><summary>¿Podemos hacer una colaboración distinta al patrocinio económico?</summary><p>Sí. Espacios, herramientas, mentoría, conocimiento, difusión o conexiones también pueden contribuir a hacer posible el proyecto.</p></details>
+<details><summary>¿Podemos recibir información sobre lo que ocurre con las participantes?</summary><p>Sí. El seguimiento y la medición forman parte del diseño de la primera cohorte, y las entidades colaboradoras recibirán información sobre los resultados acordados.</p></details>
+<details><summary>¿Podemos involucrar a nuestro equipo?</summary><p>Dependiendo de la modalidad de colaboración, pueden plantearse actividades de mentoría, encuentros, presentación de proyectos u otras formas de participación.</p></details>
+<details><summary>¿Cómo empezamos?</summary><p>Cuéntanos qué tipo de entidad eres, qué te interesa de Aumentadas y qué tipo de colaboración estás considerando. A partir de ahí podemos explorar juntos la mejor forma de participar.</p></details>
+</div>
+<div style="display:flex;justify-content:center;margin-top:32px">
+<a class="btn btn-primary" href="mailto:TU_EMAIL?subject=Alianza%20Aumentadas">Quiero explorar una alianza</a>
+</div>
 </div>
 </div>
 </section>
