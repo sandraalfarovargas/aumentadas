@@ -141,16 +141,18 @@ const PARTS = [
   {id:'cargo', n:6, type:'text', label:'Tu cargo', hint:'Solo si becas en nombre de una entidad.', entry:'330065131', req:false, auto:'organization-title'}
  ]},
  {title:'Parte II: Tu beca', lead:'Becas a una mujer con talento para que pase un día creando con IA desde su oficio. Ella paga aparte 12 € de comida.', qs:[
-  {id:'plazas', n:7, type:'radio', cols:true, label:'¿Cuántas plazas quieres becar?', note:'Una plaza vale 100 €. <strong>Tu beca cubre 90 €</strong>. Ella aporta 10 € como compromiso.', entry:'1940586422', req:true, opts:['1 plaza · 90 €','2 plazas · 180 €','3 plazas · 270 €','4 plazas · 360 €','5 plazas o más']},
-  {id:'para', n:8, type:'radio', label:'¿Para quién es tu beca?', entry:'1109379611', req:true, opts:['Para una mujer que conozco','Para una postulante que elija Aumentadas']},
-  {id:'quien', n:9, type:'textarea', label:'Si es para alguien concreto, ¿quién?', hint:'Nombre y email de cada persona. Le escribiremos para que complete su postulación.', entry:'1882619851', req:false},
-  {id:'aparece', n:10, type:'radio', label:'¿Cómo quieres que aparezca tu apoyo?', hint:'Los patrocinadores aparecen en nuestra web y en nuestras redes.', entry:'1238029343', req:true, opts:['Con el nombre o logo de mi entidad','Con mi nombre','De forma anónima']},
-  {id:'mueve', n:11, type:'checkbox', label:'¿Qué te mueve a becar una plaza?', hint:'Puedes elegir varias.', entry:'211743552', req:false, other:'Otra', opts:['Que el talento que ya está aquí se vea','Igualdad de oportunidades','Apoyar a profesionales migrantes','Impulsar el emprendimiento femenino']}
+  {id:'lab', n:7, type:'radio', label:'¿Qué Aumentadas Lab quieres patrocinar?', hint:'Los dos son de 9:00 a 18:00.', entry:'2015407923', req:true, opts:['Barcelona · viernes 4 de diciembre','Valencia · viernes 11 de diciembre','Donde más se necesite']},
+  {id:'plazas', n:8, type:'radio', cols:true, label:'¿Cuántas plazas quieres becar?', note:'Una plaza vale 100 €. <strong>Tu beca cubre 90 €</strong>. Ella aporta 10 € como compromiso.', entry:'1940586422', req:true, opts:['1 plaza · 90 €','2 plazas · 180 €','3 plazas · 270 €','4 plazas · 360 €','5 plazas o más','Quiero patrocinar de otra forma']},
+  {id:'otra', n:9, type:'checkbox', label:'¿De qué otra forma quieres patrocinar?', hint:'Solo si elegiste patrocinar de otra forma. Puedes elegir varias.', entry:'1985370997', req:false, opts:['Quiero donar mi espacio para el Lab','Quiero donar la comida para las participantes','Quiero donar mi tiempo como mentora']},
+  {id:'para', n:10, type:'radio', label:'¿Para quién es tu beca?', entry:'1109379611', req:true, opts:['Para una mujer que conozco','Para una postulante que elija Aumentadas']},
+  {id:'quien', n:11, type:'textarea', label:'Si es para alguien concreto, ¿quién?', hint:'Nombre y email de cada persona. Le escribiremos para que complete su postulación.', entry:'1882619851', req:false},
+  {id:'aparece', n:12, type:'radio', label:'¿Cómo quieres que aparezca tu apoyo?', hint:'Los patrocinadores aparecen en nuestra web y en nuestras redes.', entry:'1238029343', req:true, opts:['Con el nombre o logo de mi entidad','Con mi nombre','De forma anónima']},
+  {id:'mueve', n:13, type:'checkbox', label:'¿Qué te mueve a becar una plaza?', hint:'Puedes elegir varias.', entry:'211743552', req:false, other:'Otra', opts:['Que el talento que ya está aquí se vea','Igualdad de oportunidades','Apoyar a profesionales migrantes','Impulsar el emprendimiento femenino']}
  ]},
  {title:'Parte III: Factura y siguiente paso', lead:'Aumentadas emite factura. Aún no es una ONG, así que no hay certificado de donación ni desgravación.', box:'<strong>Lo que recibes:</strong> en enero, el proyecto que creó tu becada y cómo avanza. El informe de impacto del Lab. Fotos y vídeo del día. Tu mención en aumentadas.com y en redes.', qs:[
-  {id:'factura', n:12, type:'textarea', label:'Datos de facturación', hint:'Nombre o razón social, NIF o CIF y dirección. Si prefieres, nos los das después.', entry:'1121355553', req:false},
-  {id:'hablar', n:13, type:'radio', label:'¿Prefieres hablar antes?', entry:'226935900', req:true, opts:['No hace falta, envíame la factura','Sí, una llamada de 15 minutos']},
-  {id:'datos', n:14, type:'consent', label:'Protección de datos', text:'Acepto que Aumentadas use mis datos para gestionar mi beca y contactarme.', entry:'907289469', gfValue:'Acepto que Aumentadas use mis datos para gestionar mi beca y contactarme.', req:true}
+  {id:'factura', n:14, type:'textarea', label:'Datos de facturación', hint:'Nombre o razón social, NIF o CIF y dirección. Si prefieres, nos los das después.', entry:'1121355553', req:false},
+  {id:'hablar', n:15, type:'radio', label:'¿Prefieres hablar antes?', entry:'226935900', req:true, opts:['No hace falta, envíame la factura','Sí, una llamada de 15 minutos']},
+  {id:'datos', n:16, type:'consent', label:'Protección de datos', text:'Acepto que Aumentadas use mis datos para gestionar mi beca y contactarme.', entry:'907289469', gfValue:'Acepto que Aumentadas use mis datos para gestionar mi beca y contactarme.', req:true}
  ]}
 ];
 
